@@ -1,7 +1,7 @@
 'use client';
 
 import { Star } from 'lucide-react';
-import { WordChoice } from '../types';
+import { WordChoice } from '../app/types';
 
 interface GameCardProps {
   choice: WordChoice;

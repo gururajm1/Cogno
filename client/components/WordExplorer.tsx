@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import { Volume2 } from 'lucide-react';
 import GameCard from './GameCard';
-import { WORDS_BY_CATEGORY } from '../lib/data';
-import { WordChoice, Difficulty } from '../types';
+import { WORDS_BY_CATEGORY } from '../app/lib/data';
+import { WordChoice, Difficulty } from '../app/types';
 
 interface WordExplorerProps {
   difficulty: Difficulty;
