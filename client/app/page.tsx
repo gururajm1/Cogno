@@ -1,159 +1,40 @@
-// app/page.tsx
+import Image from 'next/image'
+import Link from 'next/link'
 
-import React from 'react';
-import { Stethoscope, UserPlus, Brain, Puzzle, Book, Calculator, Link } from 'lucide-react';
-import GaurdianLoginButton from './events/gaurdianLoginButton';
-import DoctorLoginButton from './events/doctorLoginButton';
-import HomeEvent from './events/homeEvent';
-
-export default function Page() {
-  const games = [
-    { name: 'Brain Boost', icon: Brain, description: 'Enhance cognitive skills through structured activities.' },
-    { name: 'Number Mastery', icon: Calculator, description: 'Develop mathematical abilities with targeted exercises.' },
-    { name: 'Language Development', icon: Book, description: 'Improve communication skills with specialized tasks.' },
-    { name: 'Problem Solving', icon: Puzzle, description: 'Build analytical thinking with tailored challenges.' },
-  ];
-
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center">
-            <Stethoscope className="h-8 w-8 text-blue-600 mr-2" />
-            <h1 className="text-2xl font-bold text-blue-700">Cognoo</h1>
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            {['About', 'Programs', 'Research', 'Cofntact'].map((item) => (
-              <a key={item} href={`/${item.toLowerCase()}`} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
-                {item}
-              </a>
-            ))}
-          </nav>
+    <main className="min-h-screen flex items-center justify-center p-4">
+      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
+          <Image
+            src="/placeholder.svg"
+            alt="Children learning with globe illustration"
+            width={600}
+            height={600}
+            className="w-full"
+            priority
+          />
         </div>
-      </header>
-
-      <HomeEvent />
-
-      <main className="flex-grow container mx-auto px-4 p-8">
-        <section className="mb-20">
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img
-              src="/placeholder.svg"
-              alt="Medical professionals working with children on educational activities"
-              className="w-full h-auto object-cover"
-              style={{ height: '500px', width: '100%' }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-green-600/80 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h2 className="text-3xl md:text-4xl font-bold mb-2">Cognoo</h2>
-                <p className="text-lg md:text-xl max-w-2xl mx-auto">
-                  Integrating medical expertise with educational technology for optimal child development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto mb-32">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex items-center justify-center mb-4">
-              <UserPlus className="h-12 w-12 text-blue-500" />
-            </div>
-            <h3 className="text-xl font-bold text-blue-700 text-center mb-2">Guardian Access</h3>
-            <p className="text-gray-600 text-center mb-4">
-              Monitor and support your child's therapeutic learning journey.
-            </p>
-            <GaurdianLoginButton />
-          </div>
-
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex items-center justify-center mb-4">
-              <Stethoscope className="h-12 w-12 text-green-500" />
-            </div>
-            <h3 className="text-xl font-bold text-green-700 text-center mb-2">Professional Portal</h3>
-            <p className="text-gray-600 text-center mb-4">
-              Access tools to guide, assess, and customize patient progress.
-            </p>
-            <DoctorLoginButton />
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h3 className="text-2xl font-bold text-blue-800 text-center mb-6">Therapeutic Learning Programs</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-4xl mx-auto">
-            {games.map((game, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-4">
-                <div className="flex items-center justify-center mb-3">
-                  {React.createElement(game.icon, { className: "h-8 w-8 text-blue-500" })}
-                </div>
-                <h4 className="text-lg font-semibold text-blue-700 text-center mb-2">{game.name}</h4>
-                <p className="text-sm text-gray-600 text-center">
-                  {game.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="text-center mt-24 mb-12">
-          <h3 className="text-2xl font-bold text-blue-800 mb-6">Why Choose Cognoo?</h3>
-          <div className="grid md:grid-cols-3 gap-10 max-w-4xl mx-auto">
-            {[ 
-              { title: 'Evidence-Based Approach', description: 'Programs designed on proven medical research', icon: '🔬' },
-              { title: 'Personalized Treatment', description: 'Adaptive learning tailored to each child', icon: '🎯' },
-              { title: 'Expert Oversight', description: 'Guided by experienced medical professionals', icon: '👨‍⚕️' },
-            ].map((feature, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-4">
-                <span className="text-3xl mb-2 block">{feature.icon}</span>
-                <h4 className="text-lg font-semibold text-blue-700 mb-2">{feature.title}</h4>
-                <p className="text-sm text-gray-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
-
-      <footer className="bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h5 className="text-lg font-semibold mb-4">About Us</h5>
-              <p className="text-sm text-blue-200">Cognoo: Innovative therapeutic learning solutions for every child's unique developmental journey.</p>
-            </div>
-            <div>
-              <h5 className="text-lg font-semibold mb-4">Quick Links</h5>
-              <ul className="space-y-2">
-                {['Home', 'Programs', 'Research', 'FAQ'].map((item) => (
-                  <li key={item}>
-                    <a href={`/${item.toLowerCase()}`} className="text-sm text-blue-200 hover:text-white transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-lg font-semibold mb-4">Contact</h5>
-              <p className="text-sm text-blue-200">info@cognoo.com</p>
-              <p className="text-sm text-blue-200">+1 (800) 123-4567</p>
-            </div>
-            <div>
-              <h5 className="text-lg font-semibold mb-4">Follow Us</h5>
-              <div className="flex space-x-4">
-                <a href="#" className="text-xl text-blue-200 hover:text-white">
-                  <span className="text-blue-200">Facebook</span>
-                </a>
-                <a href="#" className="text-xl text-blue-200 hover:text-white">
-                  <span className="text-blue-200">Twitter</span>
-                </a>
-                <a href="#" className="text-xl text-blue-200 hover:text-white">
-                  <span className="text-blue-200">Instagram</span>
-                </a>
-              </div>
-            </div>
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-5xl font-bold mb-4">Cognoy</h1>
+          <p className="text-xl mb-8">Empower young minds through play</p>
+          <div className="space-y-4">
+            <Link
+              href="/register"
+              className="block w-full bg-purple-600 text-white py-3 px-6 rounded-lg text-center hover:bg-purple-700 transition-colors"
+            >
+              Join
+            </Link>
+            <Link
+              href="/login"
+              className="block w-full bg-white text-black py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition-colors"
+            >
+              Login
+            </Link>
           </div>
         </div>
-      </footer>
-    </div>
-  );
+      </div>
+    </main>
+  )
 }
+
