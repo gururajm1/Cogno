@@ -11,7 +11,7 @@ export function GameBenefits() {
             <span>Game Benefits</span>
             <ChevronRight className="w-5 h-5" />
           </div>
-          <p className="text-sm text-gray-400">Enjoy learning with Cognoy.</p>
+          <p className="text-sm text-gray-400">Enjoy learning with Cogno.</p>
         </div>
         <div className="space-y-2">
           <div className="flex items-center justify-between">

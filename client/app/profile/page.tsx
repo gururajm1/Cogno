@@ -22,7 +22,7 @@ export default function Profile() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-xl">@Cognoy.child</h2>
+                  <h2 className="text-xl">@Cogno.child</h2>
                   <button className="text-purple-400 text-sm">Change avatar</button>
                 </div>
               </div>
@@ -30,11 +30,11 @@ export default function Profile() {
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm mb-2">Username</label>
-                  <Input defaultValue="Cognoy.child" />
+                  <Input defaultValue="Cogno.child" />
                 </div>
                 <div>
                   <label className="block text-sm mb-2">Parent's email</label>
-                  <Input defaultValue="parent@Cognoy.io" type="email" />
+                  <Input defaultValue="parent@Cogno.io" type="email" />
                 </div>
                 <div>
                   <label className="block text-sm mb-2">Emergency contact</label>

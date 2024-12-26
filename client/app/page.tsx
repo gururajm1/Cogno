@@ -16,7 +16,7 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-5xl font-bold mb-4">Cognoy</h1>
+          <h1 className="text-5xl font-bold mb-4">Cogno</h1>
           <p className="text-xl mb-8">Empower young minds through play</p>
           <div className="space-y-4">
             <Link

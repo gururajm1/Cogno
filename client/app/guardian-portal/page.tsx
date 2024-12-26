@@ -58,7 +58,7 @@ export default function GuardianPortal() {
               <div className="space-y-4">
                 {[
                   { title: 'Create a game', time: 'EEG and', tags: ['t Det', 't Ga'] },
-                  { title: 'Cognoy Logo Design', time: '30m 18s', tags: ['v Det', 't Des'] },
+                  { title: 'Cogno Logo Design', time: '30m 18s', tags: ['v Det', 't Des'] },
                   { title: 'Dashboard Design', time: '1h 48m 22s', tags: ['v Det', 't Des'] },
                   { title: 'Create a game', time: '17m 1s', tags: ['v Det', 't Ga'] },
                   { title: 'Mood Tracker', time: '15h 5m 58s', tags: ['v Det', 'Trac'] },
