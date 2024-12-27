@@ -1,0 +1,150 @@
+{
+  "TabStyleOne": [
+    {
+      "title": "Efficient, AI-Powered Cognitive Training",
+      "img": "/images/products/products-dark/AI-Screening.png",
+      "imgLight": "/images/products/products-dark/AI-Screening.png",
+      "menuId": "video-generator",
+      "text": "AI Neurofeedback",
+      "target": "video-generate",
+      "iconImg": "/images/icons/video-g.png",
+      "link":"/features/ai-screening",
+      "isSelect": true,
+      "subItem": [
+        {
+          "text": "Automated EEG Data Analysis"
+        },
+        {
+          "text": "Progress Tracking Algorithms"
+        },
+        {
+          "text": "Personalized Training Plans"
+        },
+        {
+          "text": "AI Feedback System"
+        },
+        {
+          "text":"Personalized Cognitive Parameters"
+        }
+      ]
+    },
+    {
+      "title": "Advanced AI-Driven Cognitive Enhancement Solutions",
+      "img": "/images/products/products-dark/AI-Sourcing.svg",
+      "imgLight": "/images/products/products-dark/AI-Sourcing.svg",
+      "menuId": "audio-generator",
+      "text": "AI Cognitive Training",
+      "target": "audio-generate",
+      "iconImg": "/images/icons/audio-g.png",
+      "link":"/features/ai-sourcing",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Predictive Cognitive Development Analysis"
+        },
+        {
+          "text": "Automated Progress Tracking"
+        },
+        {
+          "text": "Diverse Cognitive Level Sourcing"
+        },
+        {
+          "text": "Enhanced with Top 1% AI Algorithms for Cognitive Abilities"
+        }
+      ]
+    },
+    
+    {
+      "title": "Real-Time Cognitive Performance Tracking",
+      "img": "/images/products/products-dark/AI-Feedback.svg",
+      "imgLight": "/images/products/products-dark/AI-Feedback.svg",
+      "menuId": "text-generator",
+      "text": "AI Progress Monitoring",
+      "target": "text-generate",
+      "iconImg": "/images/icons/text-g.png",
+      "link":"/features/ai-feedback",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transparent Evaluation and Progress Insights"
+        },
+        {
+          "text": "Personalized Feedback for Cognitive Growth"
+        },
+        {
+          "text": "Empowering Users with Actionable Insights"
+        },
+        {
+          "text": "Data-Driven Analysis for Continuous Improvement"
+        }
+      ]
+    },
+    {
+      "title": "Real-Time Cognitive Assessment",
+      "img": "/images/products/products-dark/AI-Interview.svg",
+      "imgLight": "/images/products/products-dark/AI-Interview.svg",
+      "menuId": "code-generator",
+      "text": "AI Feedback System",
+      "target": "code-generate",
+      "iconImg": "/images/icons/code-g.png",
+      "link":"/features/ai-interview",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Automated Progress Monitoring"
+        },
+        {
+          "text": "Feedback on Mental Health Improvement"
+        },
+        {
+          "text": "Behavioral and Emotional Well-being Analysis"
+        },
+        {
+          "text": "Centralized Feedback for Healthcare Professionals"
+        }
+      ]
+    }
+  ],
+  "advanceTab": [
+    {
+      "tabId": "home",
+      "target": "home-tab",
+      "isSelect": true,
+      "menuText": "Connect with AI",
+      "img": "/images/split/split-1.png",
+      "subTitle": "How it work",
+      "title": "Connect with Al chatbot",
+      "desc": "Dentify the platform or interface through which you can access the chatbot. This could be a website, a messaging app, or a dedicated application."
+    },
+    {
+      "tabId": "profile",
+      "target": "profile-tab",
+      "isSelect": false,
+      "menuText": "Streamline Workflow",
+      "img": "/images/split/split-4.png",
+      "subTitle": "Exploring Efficiency",
+      "title": "Streamline Your Workflow",
+      "desc": "Discover tools and techniques to optimize your workflow, making your tasks more efficient and manageable."
+    },
+    {
+      "tabId": "contact",
+      "target": "contact-tab",
+      "isSelect": false,
+      "menuText": "Cybersecurity",
+      "img": "/images/split/split-3.png",
+      "subTitle": "Navigating Cybersecurity",
+      "title": "Protecting Your Digital Presence",
+      "desc": "Gain insights into cybersecurity measures and strategies to safeguard your online identity and sensitive information."
+    },
+    {
+      "tabId": "contact",
+      "target": "contact-tab",
+      "isSelect": false,
+      "menuText": "Data Analysis",
+      "img": "/images/split/split-5.png",
+      "subTitle": "Mastering Data Analysis",
+      "title": "Demystifying Data Analytics",
+      "desc": "Learn the fundamentals of data analysis, including tools and methodologies, to extract meaningful insights from raw data."
+    }
+  ]
+}

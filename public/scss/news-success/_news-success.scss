@@ -1,0 +1,15 @@
+.success-subs{
+    padding-top: 20%;
+    text-align: center;
+    padding-bottom: 10%;
+    text-transform: capitalize;
+
+    span{
+        background: linear-gradient(90deg, #6239dd 0%, #CE99FF 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+}

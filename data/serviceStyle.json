@@ -1,0 +1,54 @@
+{
+  "serviceOne": [
+    {
+      "img": "/images/icons/service-icon-01.svg",
+      "title": "Predictive Talent Identification",
+      "desc": "Utilize AI to predict and identify potential candidates who best match your job requirements, even from passive talent pools, ensuring you reach top talent early."
+    },
+    {
+      "img": "/images/icons/service-icon-02.svg",
+      "title": "Behavioral and Emotional Analysis",
+      "desc": "Implement AI tools to analyze candidates’ behavioral cues and emotional responses during interviews, offering deeper insights into their cultural fit and interpersonal abilities."
+    },
+    {
+      "img": "/images/icons/service-icon-03.svg",
+      "title": "End-to-End Candidate Engagement",
+      "desc": "Leverage the AI Bot to manage the entire candidate journey, from initial screening to final interviews, ensuring a smooth and consistent experience."
+    },
+    {
+      "img": "/images/icons/service-icon-04.svg",
+      "title": "Centralized Feedback and Reporting",
+      "desc": "AI-generated reports provide detailed feedback on each candidate, consolidating interview results into actionable insights that help in making informed hiring decisions."
+    },
+    {
+      "img": "/images/icons/service-icon-05.svg",
+      "title": "Transparent Evaluation Process",
+      "desc": "Ensure full transparency by making feedback visible to both employers and candidates, fostering trust and clarity throughout the hiring process."
+    },
+    {
+      "img": "/images/icons/service-icon-06.svg",
+      "title": "Data-Driven Insights for Employers",
+      "desc": "Provide employers with detailed reports that compile feedback from all interview rounds, helping in making informed hiring decisions and reducing the time to hire."
+    }
+  ],
+  "serviceTwo": [
+    {
+      "img": "/images/service/service-icon-01.png",
+      "imgLight": "/images/light/service/service-icon-01.png",
+      "title": "100% No-Risk, Money Back Guarantee!",
+      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+    },
+    {
+      "img": "/images/service/service-icon-02.png",
+      "imgLight": "/images/light/service/service-icon-02.png",
+      "title": "Upgrade or Cancel Anytime",
+      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
+    },
+    {
+      "img": "/images/service/service-icon-03.png",
+      "imgLight": "/images/light/service/service-icon-03.png",
+      "title": "Not sure yet, try the free version",
+      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+    }
+  ]
+}

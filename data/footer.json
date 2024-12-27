@@ -1,0 +1,52 @@
+{
+  "footer": [
+    {
+      "links": [
+        {
+          "title": "Quick Links",
+          "innerItem": [
+            {
+              "link": "/features",
+              "text": "Features"
+            },
+            
+            {
+              "link": "/contact",
+              "text": "Contact"
+            }
+          ]
+        }
+      ],
+      "services": [
+        {
+          "title": "Services",
+          "innerItem": [
+            {
+              "link": "/features/ai-screening",
+              "text": "AI Neurofeedback"
+            },
+            {
+              "link": "/features/ai-sourcing",
+              "text": "AI Cognitive Training"
+            },
+            {
+              "link": "/features/ai-feedback",
+              "text": "AI Progress Monitoring"
+            },
+            {
+              "link": "/features/ai-interview",
+              "text": "AI Feedback System"
+            }
+          ]
+        }
+      ],
+      "contact": [
+        {
+          "location": "Parker road, Colorado 80134, United States",
+          "mail": "contact@cogno.co",
+          "number": "1 386-688-3295"
+        }
+      ]
+    }
+  ]
+}

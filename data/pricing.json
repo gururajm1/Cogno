@@ -1,0 +1,93 @@
+{
+  "pricing": [
+    {
+      "priceId": "nav-home",
+      "priceType": "Monthly",
+      "discount": "",
+      "isSelect": false,
+      "priceBody": [
+        {
+          "id": 1,
+          "priceId": "nav-home",
+          "isSelect": false,
+          "isShow": false,
+          "classNum": "one",
+          "subTitle": "",
+          "title": "For small teams upto 10 employees",
+          "price": "Free",
+          "priceFor": "",
+          "limited": "Limited Offer",
+          "text": "Features",
+          "iconClass": "fa-regular fa-chart-simple",
+          "listItem": [
+            {
+              "text": "Offered as a separate module, not included in the base packages"
+            },
+            {
+              "text": "Prices based on the specific analytics requirements of the organisation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "priceId": "nav-home",
+          "isSelect": false,
+          "isShow": true,
+          "classNum": "one",
+          "subTitle": "Recruitment Engine",
+          "title": "For large teams & corporations",
+          "price": "$39",
+          "priceFor": "/Per Month",
+          "limited": "Limited Offer",
+          "text": "Features",
+          "iconClass": "fa-regular fa-engine",
+          "listItem": [
+            {
+              "text": "Upto 3 recruiters/HR"
+            },
+            {
+              "text": "AI-driven candidate sourcing and screening"
+            },
+            {
+              "text": "Automated interview scheduling and feedback"
+            },
+            {
+              "text": "Basic analytics for recruitment metrics"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "priceId": "nav-home",
+          "isSelect": false,
+          "isShow": true,
+          "classNum": "one",
+          "subTitle": "Talent Management",
+          "title": "For large teams & corporations",
+          "price": "$50",
+          "priceFor": "/Per Month",
+          "limited": "Limited Offer",
+          "text": "Features",
+          "iconClass": "fa-sharp fa-regular fa-list-check",
+          "listItem": [
+            {
+              "text": "The above pricing is upto 10 employees"
+            },
+            {
+              "text": "Leave Management"
+            },
+            {
+              "text": "Attendance Management"
+            },
+            {
+              "text": "Onboarding"
+            },
+            {
+              "text": "Employee Management"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

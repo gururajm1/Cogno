@@ -1,0 +1,80 @@
+{
+    "AI_Sourcing": {
+      
+      "sub-features": [
+        {
+          "title": "Smart Talent Discovery",
+          "description": " AI identifies and matches top candidates with roles, optimizing recruitment from the start."
+        },
+        {
+          "title": "Diverse Talent Pool",
+          "description": "Source candidates from various backgrounds to ensure a diverse and well-rounded team."
+        },
+        {
+          "title": "Automated Ranking",
+          "description": "AI ranks candidates by skills and potential, helping you focus on the best options."
+        }
+      ],
+      "image": "/images/features/Ai-sourcing.svg"
+    },
+    "AI_Screening": {
+      
+      "sub-features": [
+        {
+          "title": "Resume Parsing",
+          "description": "Automatically extract key resume data, allowing faster, more accurate screening decisions.",
+          "icon":"fa fa-search"
+        },
+        {
+          "title": "Bias-Free Screening",
+          "description": "AI ensures every candidate is screened fairly, reducing unconscious biases in evaluations.",
+          "icon":"fa-regular fa-laptop-code"
+        },
+        {
+          "title": "Customizable Criteria",
+          "description": "Tailor screening algorithms to match your specific hiring needs, ensuring best-fit candidates."
+        }
+      ],
+      "image": "/images/features/ind-features/Ai-screening.svg"
+    },
+    "AI_Interview": {
+      
+      "sub-features": [
+        {
+          "title": "Automated Scheduling",
+          "description": "Schedule interviews without manual effort, ensuring candidates and interviewers find convenient times.",
+          "icon":"fa-regular fa-calendar-clock"
+        },
+        {
+          "title": "Video Analytics",
+          "description": "AI analyzes body language and communication during interviews to provide deeper performance insights.",
+          "icon":"fa-regular fa-chart-user"
+        },
+        {
+          "title": "Comprehensive Reports",
+          "description": "Receive clear interview feedback and performance reports to support objective decision-making.",
+          "icon":"fa-regular fa-comment-question"
+        }
+      ],
+      "image": "/images/features/ind-features/Ai-interview.svg"
+    },
+    "AI_Feedback_System": {
+      
+      "sub-features": [
+        {
+          "title": "Real-Time Feedback",
+          "description": "Instantly provide clear, actionable feedback to candidates and employees after every interview."
+        },
+        {
+          "title": "Data-Driven Insights",
+          "description": "Use AI-generated feedback to improve both hiring decisions and employee development outcomes."
+        },
+        {
+          "title": "Transparent Communication",
+          "description": "Foster trust and clarity by delivering transparent, detailed feedback throughout the recruitment process."
+        }
+      ],
+      "image":"/images/features/Ai-feedback.svg"
+    }
+  }
+  

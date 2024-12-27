@@ -1,0 +1,73 @@
+{
+  "testimonial": [
+    {
+      "isActive": true,
+      "isBorder": true,
+      "desc": "Cogno delivers powerful, innovative tools that significantly enhance the recruitment process with speed and precision.",
+      "name": "Nick Lumsden",
+      "post": "VP of Engineering - OEC Michigan, USA",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/brand-t.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    },
+    {
+      "desc": "Cogno has revolutionised the recruitment strategy with its innovative technology, delivering exceptional efficiency and insight.",
+      "name": "Heather Day",
+      "post": "Principal - HRBP -  Datarails, Tennessee, USA",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/brand-t.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    },
+    {
+      "desc": "Cogno's technology seamlessly integrates advanced AI with user-friendly design, setting a new standard for efficiency in recruitment.",
+      "name": "Andrew Lake",
+      "post": "Head of Engineering - Entreport AI Lower Saxony, Germany",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/brand-t.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    },
+    {
+      "isActive": true,
+      "desc": "Cogno’s groundbreaking approach to data-driven recruitment has significantly elevated the hiring strategies and outcomes.",
+      "name": "Murali Polakam",
+      "post": "Chief Data Strategist - CloudSire Colorado, USA",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/spotify.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    },
+    {
+      "desc": "Cogno's platform has revolutionized the hiring process, providing unparalleled insights and streamlining our recruitment efforts with ease.",
+      "name": "Monica Kapuwan",
+      "post": "HRBP - CloudoPi Noida, India",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/brand-t.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    },
+    {
+      "desc": "Streamlined employee management from recruitment to termination with cogno's advanced HR technology.",
+      "name": "Guy Hawkins",
+      "post": "Hiring Expert",
+      "userImg": "/images/team/team-02sm.jpg",
+      "brandImg": "/images/brand/brand-t.png",
+      "img": "/images/service/bg-testimonial.png",
+      "imgHover": "/images/service/bg-testimonial-hover.png",
+      "lightImg": "/images/light/service/bg-testimonial.png",
+      "lightImgHover": "/images/light/service/bg-testimonial-hover.png"
+    }
+  ]
+}
