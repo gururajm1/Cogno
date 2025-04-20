@@ -1,10 +1,10 @@
 import React from 'react';
-import DoctorDashboard from '../components/sidebar';
+//import DoctorDashboard from '../components/sidebar';
 
 function Progress() {
   return (
     <div className="flex">
-      <DoctorDashboard />
+      {/* <DoctorDashboard /> */}
 
       <div className="flex-grow p-4">
         <h1 className="text-xl font-bold">Progress</h1>

@@ -44,4 +44,3 @@ export function GameCard({ id, disorderId, title, description, imageUrl, difficu
     </Card>
   )
 }
-

@@ -15,7 +15,7 @@ const nextConfig = {
             // Serve the microfrontend at "/"
             {
                 source: '/',
-                destination: 'http://localhost:3001/',
+                destination: 'http://localhost:3000/dashboard',
             },
             {
                 source: '/:path*',

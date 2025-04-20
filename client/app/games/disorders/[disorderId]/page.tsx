@@ -1,9 +1,9 @@
 "use client"
-
+import { AppSidebar } from '@/components/app-sidebar'
 import { useParams } from 'next/navigation'
 import { GameCard } from "@/components/game-card"
 import { disorders } from '@/data/disorders'
-import DoctorDashboard from '@/app/components/sidebar'
+//import DoctorDashboard from '@/app/components/sidebar'
 
 export default function DisorderPage() {
   const params = useParams()
@@ -18,8 +18,8 @@ export default function DisorderPage() {
   return (
     <div className="flex">
     {/* Sidebar */}
-    <aside className="w-64 h-screen bg-gray-100 border-r">
-      <DoctorDashboard />
+    <aside className="w-64 h-screen bg-gray-100 border-r">]
+      <AppSidebar />
     </aside>
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-7xl mx-auto">

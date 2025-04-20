@@ -2,16 +2,16 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { User, Heart, Stethoscope, Users, GamepadIcon, LogOut } from 'lucide-react'
+import { User, Heart, Stethoscope, Users, GamepadIcon, LogOut, BarChart } from 'lucide-react'
 
 export function SidebarNav() {
   const pathname = usePathname()
 
   const navItems = [
-    { href: '/benefits', label: 'Benefits', icon: Heart },
+    { href: '/games', label: 'Games', icon: GamepadIcon },
     // { href: '/doctor-portal', label: 'Doctor Portal', icon: Stethoscope },
-    { href: '/guardian-portal', label: 'Guardian Portal', icon: Users },
-    { href: '/game-progress', label: 'Game Progress', icon: GamepadIcon },
+    { href: '/guardian-portal', label: 'Game Progress', icon: Users },
+    { href: '/game-progress', label: 'Game Progress', icon: BarChart },
     { href: '/profile', label: 'Profile', icon: User },
   ]
 

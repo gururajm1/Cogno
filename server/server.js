@@ -7,6 +7,11 @@ const gameRoutes = require('./routes/gameRoutes');
 const doctorRoutes = require('./routes/doctorRoutes');
 
 const app = express();
+const server = require('http').createServer(app);
+const { setupWebSocket } = require('./src/controllers/websocketController');
+
+// Initialize WebSocket server
+setupWebSocket(server);
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -29,7 +34,7 @@ if (!MONGO_URI) {
 mongoose.connect(MONGO_URI)
   .then(() => {
     console.log('MongoDB connected');
-    app.listen(PORT, () => {
+    server.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
   })

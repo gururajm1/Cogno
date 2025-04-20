@@ -7,8 +7,8 @@ import { LineChartIcon as ChartLineUp, Brain, Activity, FileText } from "lucide-
 export default function ProfileSettings() {
   return (
     <SidebarProvider>
-      <AppSidebar params={"profile"}/>
-      <SidebarInset className=" bg-gradient-to-b from-[#f8f7fa] to-[#f1e8fd]">
+      <AppSidebar />
+      <SidebarInset className="bg-white">
         <div className="min-h-screen">
           <header className="border-b border-gray-200 px-8 py-6">
             <h1 className="text-3xl font-bold text-gray-900">Profile Settings</h1>
@@ -160,7 +160,7 @@ export default function ProfileSettings() {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-7 w-full bg-black hover:bg-[#9333ea] text-white transition-colors" variant="default">Upload new document</Button>
+                <Button className="mt-6 w-full bg-white text-gray-800 hover:bg-gray-100">Upload new document</Button>
               </div>
             </div>
           </div>

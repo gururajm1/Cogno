@@ -33,7 +33,7 @@ export default function WordExplorer({ difficulty, onComplete }: WordExplorerPro
     setSelectedChoice(word);
     const correct = word === currentWord.word;
     setIsCorrect(correct);
-    
+
     setTimeout(() => {
       if (correct) {
         onComplete(1);
