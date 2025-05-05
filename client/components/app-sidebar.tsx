@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { LogOut, BarChart2, User, Gamepad2, Users } from "lucide-react"
+import { LogOut, BarChart2, User, Gamepad2, Users, Brain } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { JSX } from "react"
 
@@ -39,6 +39,12 @@ export function AppSidebar({ params }: AppSidebarProps) {
       title: "Progress Charts",
       icon: BarChart2,
       href: "/progress-charts",
+    },
+    {
+      id: "eeg-analyzer",
+      title: "Analyze EEG",
+      icon: Brain,
+      href: "/eeg-analyzer",
     },
     {
       id: "profile",

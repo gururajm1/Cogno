@@ -21,7 +21,7 @@ export function SidebarNav() {
         <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
           <User className="w-5 h-5 text-black" />
         </div>
-        <Link href="/dashboard" className="font-semibold text-lg">Cogno</Link>
+        <Link href="/games" className="font-semibold text-lg">Cogno</Link>
       </div>
       {navItems.map((item) => {
         const Icon = item.icon

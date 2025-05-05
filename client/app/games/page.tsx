@@ -5,6 +5,7 @@ import type { LucideIcon } from "lucide-react"
 import { Activity, Brain, BookOpen, Speech, Clock, Puzzle, Network, Eye } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
 
 // Dyslexia, Dyscalculia, Dysgraphia, Dyspraxia, Dysphasia, Auditory Processing Disorder, and Visual Processing Disorder.
 const disorders = [
@@ -67,6 +68,16 @@ interface DisorderCardProps {
 }
 
 function DisorderCard({ id, icon: Icon, title, description }: DisorderCardProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (id === "dyslexia") {
+      router.push('/dyslexia/games/1');
+    } else {
+      router.push(`/games/disorders/${id}`);
+    }
+  }
+
   return (
     <Card className="overflow-hidden border-none shadow-md transition-all duration-200 hover:shadow-lg bg-white">
       <CardHeader className="bg-gradient-to-br from-[#9333ea] to-[#7928ca] p-5">
@@ -79,7 +90,12 @@ function DisorderCard({ id, icon: Icon, title, description }: DisorderCardProps)
         <CardDescription className="text-gray-700 min-h-[60px]">{description}</CardDescription>
       </CardContent>
       <CardFooter className="p-3 pt-0 flex justify-center">
-        <Button className="w-full bg-black hover:bg-[#9333ea] text-white transition-colors" variant="default">
+        <Button 
+          className="w-full bg-black hover:bg-[#9333ea] text-white transition-colors" 
+          variant="default" 
+          onClick={handleClick}
+          suppressHydrationWarning={true}
+        >
           Start Games
         </Button>
       </CardFooter>

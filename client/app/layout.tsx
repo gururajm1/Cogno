@@ -1,20 +1,25 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import "./globals.css";
+import type { Metadata } from "next";
+import { AuthProvider } from "@/lib/authContext";
 
 export const metadata: Metadata = {
-  title: 'Home || Cogno',
-  description: 'Empower young minds through play',
-}
+  title: "Cogno - Cognitive Learning Platform",
+  description: "A platform for cognitive learning and development",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body className="bg-[#1a1a1a] text-white min-h-screen">{children}</body>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className="bg-[#1a1a1a] text-white min-h-screen">
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </body>
     </html>
-  )
+  );
 }
 

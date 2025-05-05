@@ -1,44 +1,39 @@
-// server.js
-require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
-const patientRoutes = require('./routes/patientRoutes');
-const gameRoutes = require('./routes/gameRoutes');
-const doctorRoutes = require('./routes/doctorRoutes');
+const dotenv = require('dotenv');
+const cors = require('cors');
+const morgan = require('morgan');
+const connectDB = require('./config/db');
+
+// Load env variables
+dotenv.config();
+
+// Connect to database
+connectDB();
 
 const app = express();
-const server = require('http').createServer(app);
-const { setupWebSocket } = require('./src/controllers/websocketController');
 
-// Initialize WebSocket server
-setupWebSocket(server);
-
-// Middleware to parse JSON
+// Middleware
+app.use(cors());
 app.use(express.json());
 
-// Routes
-app.use('/patients', patientRoutes);
-app.use('/games', gameRoutes);
-app.use('/doctors', doctorRoutes);
-
-// Ensure .env variables are loaded
-const MONGO_URI = process.env.MONGO_URI;
-const PORT = process.env.PORT || 5000; // Default to 5000 if no port is set
-
-if (!MONGO_URI) {
-  console.error('Error: MONGO_URI is not defined in .env');
-  process.exit(1); // Exit if MONGO_URI is missing
+// Logger
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
 }
 
-// Connect to MongoDB
-mongoose.connect(MONGO_URI)
-  .then(() => {
-    console.log('MongoDB connected');
-    server.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
-  })
-  .catch((err) => {
-    console.log('MongoDB connection error:', err);
-    process.exit(1); // Exit on error
-  });
+// Define Routes
+app.use('/api/disorders', require('./routes/disorders'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/profile', require('./routes/profile'));
+app.use('/api/progress', require('./routes/progress'));
+
+// Default route
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+}); 

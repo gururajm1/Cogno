@@ -29,7 +29,7 @@ export default function CognitiveDevelopment() {
 
   return (
     <SidebarProvider>
-      <AppSidebar params="cognitive-development" />
+      <AppSidebar params={"game-progress"} />
       <SidebarInset className="bg-white">
         <div className="min-h-screen bg-white">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -111,7 +111,7 @@ export default function CognitiveDevelopment() {
                     <BarChart3 className="h-5 w-5 mr-2 text-[#9333ea]" />
                     Skill Areas
                   </h2>
-                  <Button variant="outline" className="text-sm">
+                  <Button variant="outline" className="text-sm" suppressHydrationWarning={true}>
                     View All
                   </Button>
                 </div>
@@ -179,7 +179,7 @@ export default function CognitiveDevelopment() {
                   </div>
                   <Brain className="h-12 w-12" />
                 </div>
-                <Button className="mt-4 bg-white text-[#9333ea] hover:bg-gray-100">View Learning Path</Button>
+                <Button className="mt-4 bg-white text-[#9333ea] hover:bg-gray-100" suppressHydrationWarning={true}>View Learning Path</Button>
               </div>
 
               <div className="bg-[#9333ea] p-6 rounded-xl shadow-md text-white hover:bg-[#8031c4] transition-colors">
@@ -190,7 +190,7 @@ export default function CognitiveDevelopment() {
                   </div>
                   <Activity className="h-12 w-12" />
                 </div>
-                <Button className="mt-4 bg-white text-[#9333ea] hover:bg-gray-100">Start Assessment</Button>
+                <Button className="mt-4 bg-white text-[#9333ea] hover:bg-gray-100" suppressHydrationWarning={true}>Start Assessment</Button>
               </div>
             </div>
           </div>

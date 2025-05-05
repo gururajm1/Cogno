@@ -32,7 +32,7 @@ function ProfessionalLogin() {
       if (localStorage.getItem("pat-auth")) {
         router.push("/games");
       } else if (localStorage.getItem("pro-auth")) {
-        router.push("/dashboard");
+        router.push("/games");
       }
     }
   }, [pathname, isClient, router]); 

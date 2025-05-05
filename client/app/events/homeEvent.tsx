@@ -14,7 +14,7 @@ export default function HomeEvent() {
         router.push("/games");
       }
       else if (localStorage.getItem("pro-auth")) {
-        router.push("/dashboard");
+        router.push("/games");
       }
     }
   }, [router]);

@@ -1,22 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cogno Client
 
-## Getting Started
+Frontend for the Cogno cognitive learning platform.
 
-First, run the development server:
+## Setup Instructions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Install dependencies:
+   ```
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create a `.env` file in the root directory with the following variables:
+   ```
+   NEXT_PUBLIC_API_URL=http://localhost:5000/api
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Make sure the Cogno server is running (see server README for instructions).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Features
+
+- User authentication and profile management
+- Cognitive disorder learning resources
+- Interactive learning games
+- Progress tracking and analytics
+- EEG data analysis
+
+## Data Architecture
+
+Most data is now fetched from the MongoDB database through the API, except for the games page which remains hardcoded as specified. The API services are located in `lib/api.js` and provide the following functionalities:
+
+- User authentication (register, login)
+- Profile management (get, update)
+- Fetching disorders and games data
+- Tracking and submitting user progress
+
+## Tech Stack
+
+- Next.js
+- React
+- TailwindCSS
+- MongoDB (via API)
+- JWT Authentication
 
 ## Learn More
 

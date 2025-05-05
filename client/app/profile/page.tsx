@@ -37,8 +37,8 @@ export default function ProfileSettings() {
                   </label>
                   <Input
                     id="username"
-                    defaultValue="Cogno.child"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    defaultValue="balu"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
 
@@ -49,7 +49,7 @@ export default function ProfileSettings() {
                   <Input
                     id="email"
                     defaultValue="parent@Cogno.io"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
 
@@ -59,8 +59,8 @@ export default function ProfileSettings() {
                   </label>
                   <Input
                     id="emergency"
-                    defaultValue="+00 111 222 333 444"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    defaultValue="+91 9876 543210"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
 
@@ -69,7 +69,11 @@ export default function ProfileSettings() {
                     <label htmlFor="dob" className="mb-1 block text-sm font-medium text-gray-700">
                       Date of birth
                     </label>
-                    <Input id="dob" placeholder="MM/DD/YYYY" className="border-gray-300 focus-visible:ring-[#9333ea]" />
+                    <Input 
+                      id="dob" 
+                      defaultValue="06/15/2003" 
+                      className="border-gray-300 focus-visible:ring-[#9333ea] text-black" 
+                    />
                   </div>
                   <div>
                     <label htmlFor="nationality" className="mb-1 block text-sm font-medium text-gray-700">
@@ -77,8 +81,8 @@ export default function ProfileSettings() {
                     </label>
                     <Input
                       id="nationality"
-                      placeholder="Country"
-                      className="border-gray-300 focus-visible:ring-[#9333ea]"
+                      defaultValue="Indian"
+                      className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                     />
                   </div>
                 </div>
@@ -89,8 +93,8 @@ export default function ProfileSettings() {
                   </label>
                   <Input
                     id="languages"
-                    defaultValue="English, Spanish"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    defaultValue="English, Tamil, Hindi"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
 
@@ -100,8 +104,8 @@ export default function ProfileSettings() {
                   </label>
                   <Input
                     id="address"
-                    placeholder="Street Address, City, Country"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    defaultValue="13/24 abc cross street, coimbatore"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
 
@@ -111,56 +115,10 @@ export default function ProfileSettings() {
                   </label>
                   <Input
                     id="guardian"
-                    defaultValue="+11 222 333 444"
-                    className="border-gray-300 focus-visible:ring-[#9333ea]"
+                    defaultValue="+91 8765 432109"
+                    className="border-gray-300 focus-visible:ring-[#9333ea] text-black"
                   />
                 </div>
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div className="rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h2 className="mb-4 text-xl font-semibold text-gray-900">Progress Reports</h2>
-                <ul className="space-y-4">
-                  {[
-                    { icon: Activity, title: "EEG Graphs" },
-                    { icon: ChartLineUp, title: "Game Performance Graphs" },
-                    { icon: Brain, title: "Behavioral Insights" },
-                    { icon: Brain, title: "Cognitive Development" },
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
-                          <item.icon className="h-5 w-5 text-[#9333ea]" />
-                        </div>
-                        <span className="font-medium text-gray-800">{item.title}</span>
-                      </div>
-                      <button className="text-sm font-medium text-[#9333ea] hover:text-[#9333ea]/80">View</button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h2 className="mb-4 text-xl font-semibold text-gray-900">Identification Documents</h2>
-                <ul className="space-y-4">
-                  {[
-                    { icon: FileText, title: "ID Card" },
-                    { icon: FileText, title: "Passport" },
-                    { icon: FileText, title: "Residence Proof" },
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#9333ea]">
-                          <item.icon className="h-5 w-5 text-white" />
-                        </div>
-                        <span className="font-medium text-gray-800">{item.title}</span>
-                      </div>
-                      <button className="text-sm font-medium text-[#9333ea] hover:text-[#9333ea]/80">Edit</button>
-                    </li>
-                  ))}
-                </ul>
-                <Button className="mt-7 w-full bg-black hover:bg-[#9333ea] text-white transition-colors" variant="default">Upload new document</Button>
               </div>
             </div>
           </div>
